@@ -37,6 +37,7 @@ def main():
         return
 
     bars: dict = {"bar_A": [n-i for i in range(0, n)], "bar_B": [], "bar_C": []}
+    print("-"*60)
     print(f"!!!Початковий стан: А:{bars["bar_A"]} В:{bars["bar_B"]} С:{bars["bar_C"]}")
     print("-"*60)
     hanoi(n, 'bar_A', 'bar_B', 'bar_C', bars)
